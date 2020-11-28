@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+
+  python:
+    build:
+      .
+    command: python /usr/src/app/css_override_remover.py css1.css css2.css
+    volumes:
+      - ./:/usr/src/app
